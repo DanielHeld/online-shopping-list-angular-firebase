@@ -1,0 +1,37 @@
+
+<h1>My Shopping List</h1>
+
+<ul class="list-group">
+  <li *ngFor="let item of this.items" (click)="onSelectItem(item)" class="list-group-item list-group-item-action p-1 my-1 border border-2 border-dark rounded">
+
+    <div class="row align-items-center">
+      <div class="col-10">
+        <span class="d-inline-block mx-2">{{item.name}}</span>
+      </div>
+      <div class="col-2">
+        <button type="button" (click)="removeItem(item)" class="float-end btn btn-danger">Remove</button>
+      </div>
+
+    </div>
+
+    <div *ngIf="selectedItem && selectedItem === item">
+      Details Id: {{selectedItem.id}} Name: {{selectedItem.name}}
+    </div>
+
+  </li>
+
+  <li class="list-group-item p-1 my-2 border border-2 border-dark rounded">
+
+    <div class="row align-items-center">
+      <div class="col-10">
+        <label class="mx-2" for="itemName" >New Item: </label>
+        <input id="itemName" [(ngModel)]="newItemName" type="text" placeholder="name" class="max">
+      </div>
+      <div class="col-2 float-end">
+        <button type="button" (click)="addNewItem()" class="float-end btn btn-success">Add</button>
+      </div>
+    </div>
+
+  </li>
+</ul>
+

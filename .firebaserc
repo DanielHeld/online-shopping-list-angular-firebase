@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "onlineshoppinglist-fedfa": {
+      "hosting": {
+        "angular-firebase-dashboard": [
+          "onlineshoppinglist-fedfa"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "onlineshoppinglist-fedfa"
+  }
+}

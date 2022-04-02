@@ -1,0 +1,66 @@
+<div class="container">
+
+  <div class="card p-3 m-3 bg-light">
+    <div class="card-title p-3">
+      <h1 class="fs-1">Welcome</h1>
+    </div>
+    <div class="card-body">
+      <h3 class="fs-3">Login and reate your own  awesome shopping list</h3>
+    </div>
+  </div>
+  <button class="m-3" mat-raised-button color="primary" routerLink="/dashboard">
+    <mat-icon>dashboard</mat-icon>
+    <span> My Shopping List</span>
+  </button>
+
+  <span *ngIf="!user">(Please login first)</span>
+</div>
+
+
+<!--
+<section>
+    <button mat-raised-button color="primary" routerLink="/login">
+        <mat-icon>login</mat-icon>
+        <span>Login</span>
+    </button>
+    <button mat-raised-button color="primary" (click)="logout()">
+        <mat-icon>logout</mat-icon>
+        <span>Log out</span>
+    </button>
+    <button mat-raised-button color="primary" routerLink="/signup">
+        <mat-icon>person_add</mat-icon>
+        <span>Sign up</span>
+    </button>
+    <button mat-raised-button color="primary" routerLink="/forgot-password">
+        <mat-icon>help_outline</mat-icon>
+        <span>Forgot password</span>
+    </button>
+    <button mat-raised-button color="primary" routerLink="/verify-email">
+        <mat-icon>help_outline</mat-icon>
+        <span>Resend email verification</span>
+    </button>
+</section>
+
+<br>
+
+<section>
+    <button mat-raised-button color="primary" routerLink="/dashboard">
+        <mat-icon>dashboard</mat-icon>
+        <span>Dashboard</span>
+    </button>
+    <button mat-raised-button color="primary" routerLink="/admin">
+        <mat-icon>admin_panel_settings</mat-icon>
+        <span>Admin Dashboard</span>
+    </button>
+</section>
+
+<br>
+
+<mat-card *ngIf="(afAuth.user | async)">
+    <mat-icon>check_circle</mat-icon>
+    <span>User is logged in</span>
+</mat-card>
+<mat-card *ngIf="!(afAuth.user | async)">
+    <mat-icon>do_not_disturb</mat-icon>
+    <span>User is not logged in</span>
+</mat-card>-->

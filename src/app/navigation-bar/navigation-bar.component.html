@@ -1,0 +1,34 @@
+<mat-toolbar color="primary">
+  <a class="fs-1 text-decoration-none text-light" routerLink="/home">
+    Online Shopping List
+  </a>
+
+  <span class="example-spacer"></span>
+
+  <div>
+    <div *ngIf="user">
+      <span class="mx-2 fs-6">Logged in as {{(user | async)?.displayName}}</span>
+      <button class="mx-2 btn btn-danger" color="warn" (click)="logout()">
+        <span>Log out</span>
+      </button>
+    </div>
+
+    <div *ngIf="!user">
+      <span class="mx-2 fs-6">Not Logged in</span>
+      <button class="mx-2" mat-raised-button  routerLink="/login">
+        <mat-icon> login</mat-icon>
+        <span>Login</span>
+      </button>
+      <button class="mx-2" mat-raised-button routerLink="/signup">
+        <mat-icon>person_add</mat-icon>
+        <span> Sign up</span>
+      </button>
+    </div>
+  </div>
+
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>settings</mat-icon>
+  </button>
+
+</mat-toolbar>
+
