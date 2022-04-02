@@ -10,3 +10,4 @@ export const environment = {
   },
   production: true
 };
+//todo Remove firebase credentials from git
