@@ -1,10 +1,10 @@
 # Online shopping list
 A small application to create online shopping lists 
-using Angular and [Firebase](https://firebase.google.com).
-Users can create an account or login in there existing account where
+using [Angular](https://angular.io/), [Bootstrap](https://getbootstrap.com/) and [Firebase](https://firebase.google.com).
+Users can create an account or login in their existing account where
 they can access and edit their individual shopping list.
 
-The user authentication is done using [Firebase auth](https://firebase.google.com/products/auth) 
+The user authentification is done using [Firebase auth](https://firebase.google.com/products/auth) 
 
 The user details and their shopping list items 
 are stored using the [Firebase firestore](https://firebase.google.com/products/firestore).
