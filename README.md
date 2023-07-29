@@ -12,7 +12,7 @@ are stored using the [Firebase firestore](https://firebase.google.com/products/f
 Signup and verify your email.  
 ![signup screenshot](src/assets/signup_screenshot.png)
 
-Login with your userdata or reset the password with your email.
+Login with your userdata or reset the password with your email.  
 ![login screenshot](src/assets/login_screenshot.png)
 
 Edit your personal shopping list.
