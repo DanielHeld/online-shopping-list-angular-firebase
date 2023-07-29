@@ -1,6 +1,23 @@
-# AngularFirebaseDashboard
+# Online shopping list
+A small application to create online shopping lists 
+using Angular and [Firebase](https://firebase.google.com).
+Users can create an account or login in there existing account where
+they can access and edit their individual shopping list.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.16.
+The user authentication is done using [Firebase auth](https://firebase.google.com/products/auth) 
+
+The user details and their shopping list items 
+are stored using the [Firebase firestore](https://firebase.google.com/products/firestore).
+
+Signup and verify your email.
+![signup screenshot](src/assets/signup_screenshot.png)
+
+Login with your userdata or reset the password with your email
+![login screenshot](src/assets/login_screenshot.png)
+
+Edit your personal shopping list.
+![list screenshot](src/assets/list_screenshot.png)
+
 
 ## Development server
 
