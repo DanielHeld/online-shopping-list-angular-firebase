@@ -9,10 +9,10 @@ The user authentication is done using [Firebase auth](https://firebase.google.co
 The user details and their shopping list items 
 are stored using the [Firebase firestore](https://firebase.google.com/products/firestore).
 
-Signup and verify your email.
+Signup and verify your email.  
 ![signup screenshot](src/assets/signup_screenshot.png)
 
-Login with your userdata or reset the password with your email
+Login with your userdata or reset the password with your email.
 ![login screenshot](src/assets/login_screenshot.png)
 
 Edit your personal shopping list.
